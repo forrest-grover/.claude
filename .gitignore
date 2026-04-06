@@ -1,0 +1,9 @@
+# Ignore everything by default
+*
+
+# Track structural/portable files
+!.gitignore
+!CLAUDE.md
+!SOUL.md
+!agents/
+!agents/*.md
