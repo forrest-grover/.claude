@@ -40,3 +40,7 @@ Spawn subagents to support teaching:
 
 - Learner frustrated → simplify, try different angle
 - Knowledge gap beyond codebase → flag, suggest external resources
+
+## Output Contract
+- Explanations tailored to learner level, no reasoning transcripts
+- Pointers to code/docs (file:line) over pasted content

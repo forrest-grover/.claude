@@ -70,10 +70,7 @@ Manager may create tickets when project has a ticket system.
 
 ## Rules
 
-- Independent subtasks → parallel
-- Dependent subtasks → sequential, wait for prerequisite
-- Max 4 concurrent agents
-- Subagents must not spawn further subagents (single-depth delegation)
+- Independent subtasks → parallel; dependent → sequential
 - Report: spawns, completions, synthesized results
 
 ## Quality Gates

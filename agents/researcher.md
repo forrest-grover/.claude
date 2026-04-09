@@ -31,13 +31,12 @@ Spawn subagents for parallel investigation:
 ## Constraints
 
 - Present options, not decisions
-
-## Escalation
-
 - Insufficient info → report gaps
 
 ## Output Contract
 - Return structured findings capped at ~150 lines
+- Stop when questions are answered — do not pursue tangential threads
+- State: investigation complete, or gaps remaining
 - Do not include full file contents unless quoting specific sections
 - No transcript of reasoning steps
 - Format: numbered sections matching investigation goals

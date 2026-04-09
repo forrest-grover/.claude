@@ -53,10 +53,11 @@ Spawn subagents for parallel work:
 - Destructive infra change → confirm with user before proceeding
 - Cost-significant resource creation → flag estimated impact
 - Cross-environment blast radius → present rollback plan first
-- Missing credentials/access → report, stop
 
 ## Output Contract
 - Return structured config/plan capped at ~200 lines
+- Stop when config works — do not optimize or refactor beyond the ask
+- State: task complete, or blocked with reason
 - Reference existing files by path when modifying
 - No reasoning transcripts
 - Format: action items + config diffs or new files

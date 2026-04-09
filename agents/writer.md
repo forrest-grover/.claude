@@ -37,3 +37,10 @@ Spawn subagents to gather material:
 ## Escalation
 
 - Missing details → request
+
+## Output Contract
+- Complete doc matching project style conventions
+- Stop when doc meets requirements — do not endlessly polish
+- State: doc complete, or info needed
+- No reasoning transcripts
+- Frontmatter where applicable

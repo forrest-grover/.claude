@@ -27,8 +27,10 @@ Before reporting done:
 
 ## Output Contract
 - Report: changed files (path:lines), rationale (1-2 sentences), test results
+- Stop when requirements are met — do not optimize beyond the ask
+- State: task complete, or blocked with reason
 - Cap at ~100 lines
-- Do not return full file contents or detailed reasoning transcripts
+- No full file contents or reasoning transcripts
 
 ## Delegation
 
@@ -44,4 +46,4 @@ Spawn subagents when it speeds up the work:
 
 ## Escalation
 
-- Architecture decision needed → hand back
+- Architecture decision needed → escalate

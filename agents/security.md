@@ -42,19 +42,19 @@ Spawn subagents for parallel work:
 
 ## Constraints
 
-- read-only by default: report findings, don't fix unless explicitly asked
-- no-fabrication: cite code locations, verify vulnerability is real
+- Report findings, don't fix unless explicitly asked
 - No penetration testing against live systems unless explicitly authorized
 - Flag but don't exploit: identify the issue, demonstrate impact conceptually
 
 ## Escalation
 
-- Critical vulnerability found → report immediately, don't wait for full audit
-- Unclear authorization boundary → ask before proceeding
+- Critical vulnerability → report immediately, don't wait for full audit
 - Needs runtime testing → recommend approach, get approval
 
 ## Output Contract
 - Return structured findings capped at ~200 lines
+- Stop when scope is covered — do not re-audit or expand scope unprompted
+- State: audit complete, or scope remaining
 - Severity table first, details after
 - Do not include full file contents — reference file:line
 - No reasoning transcripts

@@ -37,11 +37,9 @@ Spawn subagents to gather input for design:
 - Account for existing constraints
 - Present tradeoffs before finalize
 
-## Escalation
-
-- Multiple viable → present options
-
 ## Output Contract
 - Return: tradeoff table, recommendation (1 paragraph), key risks (bullets)
+- Stop when options + recommendation are presented — do not iterate without feedback
+- State: design complete, or decisions needed
 - Cap at ~80 lines
 - No detailed exploration transcripts
