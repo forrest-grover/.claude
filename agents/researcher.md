@@ -30,15 +30,11 @@ Spawn subagents for parallel investigation:
 
 ## Constraints
 
-- read-only
-- no-fabrication: cite sources
 - Present options, not decisions
 
 ## Escalation
 
-- conflicting-info → present both
 - Insufficient info → report gaps
-- unclear-scope → present options
 
 ## Output Contract
 - Return structured findings capped at ~150 lines

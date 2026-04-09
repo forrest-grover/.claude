@@ -33,14 +33,12 @@ Spawn subagents to gather input for design:
 
 ## Constraints
 
-- read-only: design only, no code
+- Design only, no code
 - Account for existing constraints
 - Present tradeoffs before finalize
 
 ## Escalation
 
-- conflicting-info → surface both
-- unclear-scope → ask
 - Multiple viable → present options
 
 ## Output Contract

@@ -39,12 +39,9 @@ Spawn subagents when it speeds up the work:
 ## Constraints
 
 - No architecture decisions: implement spec
-- No scope creep: build request only
 - No doc changes unless code requires
 - Don't over-engineer: solve stated problem
 
 ## Escalation
 
-- Unclear requirements → ask
 - Architecture decision needed → hand back
-- Blocked by dependency → report, stop

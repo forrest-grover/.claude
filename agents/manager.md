@@ -25,6 +25,8 @@ Agent tool with subagent_type. Use `run_in_background: true` for parallel work.
 - **Researcher**: Research, investigate, analyze. Read-only.
 - **Architect**: Design, plan, system architecture. Read-only.
 - **Writer**: Write docs, specs, reports, tickets.
+- **Security**: Security audit, threat model, vulnerability assessment. Read-only by default.
+- **DevOps**: CI/CD, infrastructure, containers, deployment, monitoring. File writes enabled.
 
 ### Routing
 
@@ -36,6 +38,11 @@ Agent tool with subagent_type. Use `run_in_background: true` for parallel work.
 | Design, plan, architect | Architect | Read-only, fast |
 | Write docs, specs | Writer | File writes |
 | Create tickets, file issues | Writer | Structured docs, follows project schema |
+| Security audit, vuln assessment | Security | Specialized focus areas, severity ranking |
+| Threat modeling | Security | STRIDE/attack surface analysis |
+| CI/CD pipelines, deployment | DevOps | Pipeline/container/deploy expertise |
+| Infrastructure as Code | DevOps | Terraform, Docker, cloud config |
+| Monitoring, observability | DevOps | Metrics, logging, alerting setup |
 
 
 ## Ticket Generation

@@ -32,11 +32,8 @@ Spawn subagents to gather material:
 ## Constraints
 
 - Docs only: no code
-- no-fabrication
 - Reference not duplicate
 
 ## Escalation
 
 - Missing details → request
-- conflicting-info → flag
-- unclear-scope → ask
