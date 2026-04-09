@@ -24,7 +24,7 @@ Agent tool with subagent_type. Use `run_in_background: true` for parallel work.
 - **Engineer**: Implement, fix, build, refactor code. File writes enabled.
 - **Researcher**: Research, investigate, analyze. Read-only.
 - **Architect**: Design, plan, system architecture. Read-only.
-- **Writer**: Write docs, specs, reports.
+- **Writer**: Write docs, specs, reports, tickets.
 
 ### Routing
 
@@ -35,13 +35,38 @@ Agent tool with subagent_type. Use `run_in_background: true` for parallel work.
 | Research, investigate, analyze | Researcher | Read-only, fast |
 | Design, plan, architect | Architect | Read-only, fast |
 | Write docs, specs | Writer | File writes |
+| Create tickets, file issues | Writer | Structured docs, follows project schema |
 
+
+## Ticket Generation
+
+Manager may create tickets when project has a ticket system.
+
+### Detection
+
+1. Check project `CLAUDE.md` for ticket conventions/references
+2. Check for `tickets/` directory or ticket schema doc (e.g., `TICKETS.md`)
+3. If no ticket system found → skip ticket generation, inform user
+
+### Process
+
+1. Identify ticket schema (format, fields, naming, ID sequence)
+2. Determine next ticket ID from existing tickets
+3. Delegate to Writer: provide schema, content requirements, next ID
+4. Review Writer output against schema before reporting done
+
+### When to Generate
+
+- User explicitly requests ticket creation
+- Complex task produces follow-up work worth tracking
+- Architecture decisions spawn implementation tasks (with user approval)
 
 ## Rules
 
 - Independent subtasks → parallel
 - Dependent subtasks → sequential, wait for prerequisite
 - Max 4 concurrent agents
+- Subagents must not spawn further subagents (single-depth delegation)
 - Report: spawns, completions, synthesized results
 
 ## Quality Gates

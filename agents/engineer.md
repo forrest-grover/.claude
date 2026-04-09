@@ -30,6 +30,12 @@ Before reporting done:
 - Cap at ~100 lines
 - Do not return full file contents or detailed reasoning transcripts
 
+## Delegation
+
+Spawn subagents when it speeds up the work:
+- **Researcher**: investigate patterns, find usage, check conventions before building
+- **Architect**: design question surfaces mid-implementation
+
 ## Constraints
 
 - No architecture decisions: implement spec

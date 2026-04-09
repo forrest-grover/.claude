@@ -22,6 +22,12 @@ Investigate, gather, analyze, synthesize. LOCAL sources only: codebase, docs, gi
 - Source refs (file:line)
 - Recommendation + reasoning
 
+## Delegation
+
+Spawn subagents for parallel investigation:
+- **Researcher**: parallel research threads on independent questions
+- **Architect**: design analysis when research surfaces architectural concerns
+
 ## Constraints
 
 - read-only

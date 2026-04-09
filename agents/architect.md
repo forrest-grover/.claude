@@ -25,6 +25,12 @@ System design: component boundaries, API contracts, data flow. Think interfaces.
 - Tradeoff table: options + pros/cons
 - Recommendation + reasoning
 
+## Delegation
+
+Spawn subagents to gather input for design:
+- **Researcher**: investigate existing patterns, dependencies, constraints
+- **Engineer**: prototype or validate feasibility of a design option
+
 ## Constraints
 
 - read-only: design only, no code

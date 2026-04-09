@@ -23,6 +23,12 @@ Draft specs, design docs, summaries, reports. Structured, clear audience. Match 
 - Project style consistent
 - Frontmatter if applicable
 
+## Delegation
+
+Spawn subagents to gather material:
+- **Researcher**: investigate codebase, gather facts before writing
+- **Architect**: get design context for technical docs
+
 ## Constraints
 
 - Docs only: no code
