@@ -1,9 +1,23 @@
 # Ignore everything by default
 *
 
-# Track structural/portable files
+# Configuration and top-level docs
 !.gitignore
 !CLAUDE.md
-!SOUL.md
+!MEMORY_ROUTER.md
+
+# Agent / skill / command / script definitions
 !agents/
 !agents/*.md
+!skills/
+!skills/*/
+!skills/*/*.md
+!commands/
+!commands/*.md
+!scripts/
+!scripts/*.sh
+!scripts/*.py
+
+# NOTE: memory/ and projects/ are intentionally NOT allowlisted.
+# They hold user-specific content (personal facts, project memory) and stay
+# local-only. This repo publishes the reusable framework only.

@@ -26,23 +26,19 @@ Before reporting done:
 - No TODOs, placeholders, dead code
 
 ## Output Contract
-- Report: changed files (path:lines), rationale (1-2 sentences), test results
-- Stop when requirements are met — do not optimize beyond the ask
-- State: task complete, or blocked with reason
-- Cap at ~100 lines
-- No full file contents or reasoning transcripts
+- Cap: ~100 lines
+- Format: changed files (path:lines), rationale (1-2 sentences), test results
+- See CLAUDE.md "Agent Output Contract" for shared rules
 
 ## Delegation
 
-Spawn subagents when it speeds up the work:
-- **Researcher**: investigate patterns, find usage, check conventions before building
-- **Architect**: design question surfaces mid-implementation
+Useful subagents: Researcher (patterns/conventions).
 
 ## Constraints
 
 - No architecture decisions: implement spec
 - No doc changes unless code requires
-- Don't over-engineer: solve stated problem
+- Don't over-engineer
 
 ## Escalation
 
